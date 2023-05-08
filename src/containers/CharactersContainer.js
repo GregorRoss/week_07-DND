@@ -48,13 +48,12 @@ const onMonsterSelect = (monster) => {
 
     return ( 
         <>
-            <h1>
-                DND Character App
-            </h1>
             {races.length >2? <RaceSelector races={races} onRaceSelect={onRaceSelect} monsters={monsters} onMonsterSelect={onMonsterSelect}/> : null}
+        <div className='container'>
             {selectedRace? <RaceDetail selectedRace={selectedRace} /> : null}
             {selectedMonster? <MonsterDetail selectedMonster={selectedMonster}/> : null}
 
+        </div>
         </>
      );
 }

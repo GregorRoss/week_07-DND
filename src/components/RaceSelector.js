@@ -21,7 +21,8 @@ const handleMonsterSelect = (event) => {
 
     return ( 
         <>
-        <h2> RaceSelector</h2>
+        <div className='drop-down-container'>
+
         <div className="race-drop-down">
             <select onChange={handleRaceSelect}>
             <option value="" selected > Which Race would you like to be? :</option>
@@ -34,7 +35,8 @@ const handleMonsterSelect = (event) => {
              <option value="" selected > Which Monster would you like to be? :</option>
              {monsterOptions}
             </select>
-            </div>
+        </div>
+        </div>
         </>
      );
 }
